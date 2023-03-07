@@ -1,0 +1,12 @@
+<div class="container">
+  <h1><%= @task.title %></h1>
+
+  <p class="border border-2 bg-light p-3"><%= @task.details %></p>
+
+  <%# <%= check_box_tag(:completed) %>
+  <%# <%= label_tag(:completed, "Completed?") %>
+
+  <%= link_to "Edit task", edit_task_path(@task) %>
+
+  <%= link_to "Back to all tasks", tasks_path %>
+</div>
